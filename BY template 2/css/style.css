@@ -1,0 +1,234 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+
+/**********************************
+
+GENERAL STYLES
+
+**********************************/
+a.elementor-button {
+    background-size: 250%;
+    background-position: 100%;
+    transition: all .3s ease-in-out;
+}
+a.elementor-button:hover {
+    background-position: 0%;
+}
+p:last-of-type {
+    margin-bottom:0!important;
+}
+a, a:focus {    
+    text-decoration: none!important;
+    transition: all .2s ease-in-out;
+}
+p a, p a:hover {
+    color: #BA1423!important;
+}
+.img--clip-1 {
+    clip-path: polygon(0% 0, 95% 0%, 95% 25%, 100% 30%, 100% 70%, 95% 75%, 95% 100%, 0% 100%, 0% 75%, 5% 70%, 5% 30%, 0% 25%);
+}
+.img--clip-2 {
+    clip-path: polygon(5% 0%, 100% 0%, 100% 25%, 95% 30%, 95% 70%, 100% 75%, 100% 100%, 5% 100%, 5% 75%, 0% 70%, 0 30%, 5% 25%);
+}
+ul.premium-sub-menu {
+    border-top: 2px solid #ba1423;
+}
+
+/**********************************
+
+HEADER STYLES
+
+**********************************/
+#main--nav .premium-mega-content-container .elementor-column {
+    border-top: 2px solid #ba1423;
+    box-shadow: 0 0 28px rgb(0 0 0 / 10%);
+}
+.premium-mobile-menu-container {
+    max-height: 100%!important;
+    overflow-y: unset!important;
+}
+
+@media (max-width:767px) {
+    div#contact--info ul.elementor-icon-list-items.elementor-inline-items {
+        gap: 0.5em;
+    }
+}
+
+
+/**********************************
+
+HOMEPAGE STYLES
+
+**********************************/
+@media (min-width:1025px) {
+    div#hero--headerColumn {
+        clip-path: polygon(100% 0, 100% 25%, 95% 30%, 95% 70%, 100% 75%, 100% 100%, 0 100%, 0 0);
+        min-width: 660px;
+    }
+    div#cta--sectionColumn {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 5% 70%, 5% 30%, 0% 25%);
+    }
+}
+#optional--services a:hover {
+    color:#BA1423;
+}
+#counter--section, .img-clip-top {
+    clip-path: polygon(0 0, 28% 0, 30% 5%, 70% 5%, 72% 0, 100% 0, 100% 100%, 0 100%);
+}
+.counter--box .elementor-counter-title:before {
+    content: '';
+    position: relative;
+    width: 50px;
+    height: 2px;
+    background-color: #ba1720;
+    display: block;
+    margin: 1.25em auto 0.5em;
+}
+
+@media (max-width:1024px) {
+    #counter--section, .img-clip-top {
+        clip-path: polygon(0 0, 25% 0, 30% 3%, 70% 3%, 75% 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+@media (max-width:767px) {
+    #counter--section, .img-clip-top {
+        clip-path: polygon(0 0, 22% 0, 30% 1.5%, 70% 1.5%, 78% 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+/**********************************
+
+INTERIOR PAGES STYLES
+
+**********************************/
+.section-clip-bottom {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 68% 97%, 66% 100%, 34% 100%, 32% 97%, 0% 97%);
+}
+div#product--tabs .elementor-tab-content {
+    padding: 0 0 0 4em;    
+}
+div#product--tabs ul {
+    column-count: 3;
+    column-gap: 2em;
+}
+div#product--tabs .elementor-tab-title {
+    padding: .75em;
+    transition: all .2s;
+}
+div#product--tabs .elementor-tab-title:hover {
+    background-color: black;
+    color: #fff;
+}
+div#product--tabs .elementor-tab-title.elementor-active {
+    background-color: #ba1423;
+    color: #fff;
+    border-width: 1px 0;
+    border-color: transparent;
+}
+div#product--tabs .elementor-tab-title:not(.elementor-active) {
+    border-width: 1px 0;
+    border-color: #f7f7f7
+}
+.doubleClip {
+    clip-path: polygon(0 0, 25% 0%, 27% 5%, 73% 5%, 75% 0%, 100% 0, 100% 100%, 75% 100%, 73% 95%, 27% 95%, 25% 100%, 0 100%);
+}
+.column--leftAlign .elementor-container {
+    margin-inline: 0 auto;
+}
+.column--rightAlign .elementor-container {
+    margin-inline: auto 0;
+}
+
+@media (min-width:1024px) {
+    .column--rightClip {
+        clip-path: polygon(100% 0, 100% 27%, 95% 30%, 95% 70%, 100% 73%, 100% 100%, 0 100%, 0 0);
+    }
+    .column--leftClip {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 73%, 5% 70%, 5% 30%, 0% 27%);
+    }
+}
+
+@media (max-width:1024px) {
+    div#product--tabs .elementor-tab-content {
+        padding: 3em;
+    }
+}
+@media (max-width:767px) {
+    div#product--tabs ul {
+        column-count: 2;        
+    }
+    .doubleClip {
+        clip-path: polygon(0 0, 22% 0%, 27% 5%, 73% 5%, 78% 0%, 100% 0, 100% 100%, 78% 100%, 73% 95%, 27% 95%, 22% 100%, 0 100%);
+    }
+    .section-clip-bottom {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 80% 98%, 70% 100%, 30% 100%, 20% 98%, 0% 98%);
+    }
+}
+@media (max-width:500px) {
+    div#product--tabs ul {
+        column-count: 1;
+        column-gap: unset;
+    }
+}
+
+
+/**********************************
+
+GRAVITY STYLES
+
+**********************************/
+p.gform_required_legend {
+    display: none;
+}
+.gform_footer {
+    padding: 0!important;
+}
+.gform_footer input.gform_button {
+    background-size: 250%;
+    background-position: 100%;
+    transition: all .3s ease-in-out;
+}
+.gform_footer input.gform_button:hover {
+    background-position: 0%;
+}
+div#contact--form .gfield_label {
+    color: #fff;
+}
+div#contact--form .gform-field-label--type-sub {
+    color: #cecece;
+}
+div#contact--form .gform_fields input, div#contact--form .gform_fields textarea {
+    background-color: transparent!important;
+    border: 1px solid #5a5a5a;
+    color: #cecece;
+}
+div#contact--form .gform_confirmation_message {
+    color: #fff;
+    font-size: 20px;
+}
+
+/**********************************
+
+FOOTER STYLES
+
+**********************************/
+body:not(.home) span#copyright {
+    display: none;
+}
+span#copyright a {
+    color: #A7A7A7;font-weight: 500;
+}
+span#copyright a:hover {
+    color: #ba1423;
+}
